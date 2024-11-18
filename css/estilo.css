@@ -1,6 +1,19 @@
-
+*{
+    margin: 0;
+    padding: 0;    
+}
+.menu{
+    background-color: rgb(241, 160, 67);
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
 .hero{
+    /*Insertar el tamaño al hero con el atributo "height: 80vh"*/
+    height: vh;
     background-color: rgba(255, 223, 196, 0.767);
+    display: flex;
+
 }
 .sectionuno{
     background-color: rgba(250, 197, 197, 0.863);
