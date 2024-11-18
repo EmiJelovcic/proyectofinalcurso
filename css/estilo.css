@@ -1,9 +1,16 @@
 
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.hero{
+    background-color: rgba(255, 223, 196, 0.767);
+}
+.sectionuno{
+    background-color: rgba(250, 197, 197, 0.863);
+}
+.sectiondos{
     background-color: aqua;
 }
-h1{
-    background-color: brown;
-    color: bisque;
+footer{
+    background-color: rgba(248, 153, 44, 0.815);
+}
+img{
+    width:400px;
 }
