@@ -1,29 +1,42 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 *{
     margin: 0;
     padding: 0;    
 }
+body{
+    align-content: center;
+    justify-content: center;
+    padding: 0px 250px 0px 250px;
+}
 /* ----------------------- AQUI INICIA EL EDITOR DEL HEADER ----------------------- */
+.divmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3b3c;
+}
 .menu{
-    background-color: rgb(241, 160, 67);
     height: 5vh;
     display: flex;
     justify-content: space-around;
-    font-weight: 700;
+    font-weight: 500;
     align-items: center;
 }
+
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
 }
-/*AQUI INICIA EL EDITOR DEL HEADER*/
+/*AQUI FINALIZA EL EDITOR DEL HEADER*/
 
 /* ------------------------ AQUI INICIA EL EDITOR DEL HERO ------------------------ */
 .hero{
     /*Insertar el tamaño al hero con el atributo "height: 80vh"*/
     height: vh;
-    background-color: #555a67;
+    background-color: #3f3b3c;
     display: flex;
     justify-content: space-evenly;
     /*este justify modifica horizontalmente*/
@@ -65,15 +78,16 @@ p{
 }
 .altura h2{
     text-align: center;
+    color: white;
 }
-.sectionuno{
-    background-color: rgba(250, 197, 197, 0.863);
+.altura h3{
+    color: white;
 }
-.sectiondos{
-    background-color: rgba(0, 255, 255, 0.918);
+.altura h4{
+    color: white;
 }
-.sectiontres{
-    background-color: rgba(240, 128, 128, 0.856);
+.altura h5{
+    color: white;
 }
 .sectioncuatro{
     background-color: rgba(255, 255, 0, 0.356);
@@ -93,7 +107,7 @@ footer{
 }
 /*AQUI FINALIZA LA EDICION DE ALTURA Y FONDO DE LAS SECCIONES*/
 
-/* --------------- AQUI COMENZAMOS A DARLE FORMA A LA SECCION UNO --------------- */
+/* --------------- AQUI INICIA EL EDITOR DE LA SECCION UNO --------------- */
 .sectionuno{
     height: 60vh;
     display: flex;
@@ -101,7 +115,9 @@ footer{
     flex-direction: column;
     background-color: #42434c;
     color: #e3e3e3;
-
+}
+.sectionuno h2{
+    padding: 20px 0px 20px 0px;
 }
 .tarjetasectionuno{
     /*background-color: green;*/
@@ -141,6 +157,82 @@ footer{
     border: none;
 }
 /* ---------------------- AQUI FINALIZA LA SECCION UNO ------------------------ */
+
+/* --------------- AQUI INICIA EL EDITOR DE LA SECCION DOS --------------- */
+.sectiondos{
+    background-color: #3f3b3c;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+.sectiondos h2{
+    padding: 20px 0px 20px 0px;
+}
+.sectiondos svg{
+    width: 60px;
+    height: 70px;
+    padding: 20px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.divtarjetas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.divtarjeta{
+    background-color: #302c2c;
+    text-align: center;
+    width: 30%;
+    height: 40%;
+}
+svg{
+    color: #ed8a36;
+}
+/* ---------------------- AQUI FINALIZA LA SECCION DOS ------------------------ */
+
+/* ---------------  AQUI INICIA EL EDITOR DE LA SECCION RATINGS --------------- */
+.ratings{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #544e4e;
+}
+.ratingcard{
+    justify-items: center;
+}
+/* ---------------  AQUI FINALIZA LA SECCION RATINGS --------------- */
+
+/* ---------------  AQUI INICIA EL EDITOR DE LA SECCION TRES --------------- */
+.sectiontres{
+    background-color: #3f3b3c;
+    height: 50vh;
+}
+.sectiontres h2{
+    padding: 20px 0px 20px 0px;
+}
+.divskills{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.design{
+    width: 30%;
+}
+.coding{
+    width: 30%;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+/* ---------------  AQUI FINALIZA LA SECCION TRES --------------- */
 
 /* --------------- AQUI COMENZAMOS A DARLE FORMA A LA SECCION CUATRO --------------- */
 /*continuar editando el contenido*/
