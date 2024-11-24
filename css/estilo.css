@@ -89,12 +89,8 @@ p{
 .altura h5{
     color: white;
 }
-.sectioncuatro{
-    background-color: rgba(255, 255, 0, 0.356);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+.altura h6{
+    color: white;
 }
 .sectioncinco{
     background-color: rgba(172, 255, 47, 0.938);
@@ -206,6 +202,9 @@ footer{
 .ratingcard svg{
     color: #ed8a36;
 }
+.ratings div h3{
+    padding: 10px 0px 0px 0px ;
+}
 /* ---------------  AQUI FINALIZA LA SECCION RATINGS --------------- */
 
 /* ---------------  AQUI INICIA EL EDITOR DE LA SECCION TRES --------------- */
@@ -234,13 +233,23 @@ footer{
     color: white;
 }
 
-
 /* ---------------  AQUI FINALIZA LA SECCION TRES --------------- */
 
-/* --------------- AQUI COMENZAMOS A DARLE FORMA A LA SECCION CUATRO --------------- */
+/* --------------- AQUI INICIA EL EDITOR DE LA SECCION CUATRO --------------- */
 /*continuar editando el contenido*/
+.sectioncuatro{
+    background-color: #544e4e;
+}
+.sectioncuatro{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectioncuatro div h1{
+    color: #ed8a36;
+}
 .divtextosectioncuatro{
-    background-color: brown;
     text-align: start;
 }
 .divtextosectioncuatro h2{
@@ -252,4 +261,53 @@ footer{
     border: none;
     border-radius: 20px;
     justify-content: start;
+}
+/* ---------------  AQUI FINALIZA LA SECCION CUATRO --------------- */
+
+/* --------------- AQUI INICIA EL EDITOR DE LA SECCION CINCO --------------- */
+.sectioncinco{
+    background-color: #3f3b3c;
+    height: 60vh;
+}
+.resume{
+    display: flex;
+    justify-content: space-around;
+}
+.resume h5{
+    color: #fa7d12;
+}
+.education{
+    width: 40%;
+}
+.education div{
+    background-color: #544e4e;
+    width: 90%;
+}
+.educationcard{
+    margin: 6%;
+    padding: 25px 0px 10px 0px;
+}
+.experience{
+    width: 40%;
+}
+.experience div{
+    background-color: #544e4e;
+    width: 90%;
+}
+.experiencecard{
+    background-color: azure;
+    margin: 6%;
+    padding: 25px 0px 10px 0px;
+}
+/* ---------------  AQUI FINALIZA LA SECCION CINCO --------------- */
+
+/* --------------- AQUI INICIA EL EDITOR DE LA SECCION TESTIMONIOS --------------- */
+.testimonios{
+    background-color: aquamarine;
+}
+.carousel-inner{
+    width: 50%;
+}
+.carousel-inner img{
+    object-fit: cover;
 }
