@@ -2,12 +2,13 @@
 
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    box-sizing: border-box;        
 }
 body{
     align-content: center;
     justify-content: center;
-    padding: 0px 250px 0px 250px;
+    /*padding: 0px 250px 0px 250px;*/
 }
 /* ----------------------- AQUI INICIA EL EDITOR DEL HEADER ----------------------- */
 .divmenu{
@@ -239,12 +240,11 @@ footer{
 /*continuar editando el contenido*/
 .sectioncuatro{
     background-color: #544e4e;
-}
-.sectioncuatro{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    height: 20vh;
 }
 .sectioncuatro div h1{
     color: #ed8a36;
@@ -267,7 +267,7 @@ footer{
 /* --------------- AQUI INICIA EL EDITOR DE LA SECCION CINCO --------------- */
 .sectioncinco{
     background-color: #3f3b3c;
-    height: 60vh;
+    height: 50vh;
 }
 .resume{
     display: flex;
@@ -280,7 +280,7 @@ footer{
     width: 40%;
 }
 .education div{
-    background-color: #544e4e;
+    background-color: #302c2c;
     width: 90%;
 }
 .educationcard{
@@ -291,7 +291,7 @@ footer{
     width: 40%;
 }
 .experience div{
-    background-color: #544e4e;
+    background-color: #302c2c;
     width: 90%;
 }
 .experiencecard{
@@ -303,11 +303,105 @@ footer{
 
 /* --------------- AQUI INICIA EL EDITOR DE LA SECCION TESTIMONIOS --------------- */
 .testimonios{
+    background-color: #544e4e;
+    justify-content: center;
+    height: 30vh;
+}
+.testimonios h2{
+    color: #ed8a36;
+    padding: 0 0 10% 0;
+}
+/*---ESTE ES EL CARRUSEL DE GPT---*/ 
+.carrusel {
+    width: 100%;
+    max-width: 30%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid #ddd;*/
+    /*border-radius: 10px;*/
+    background-color: #302c2c;
+}
+  /* Contenedor del contenido */
+  .carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  .carrusel-item {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+}
+  .carrusel-item h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+.carrusel-item h6 {
+    margin-bottom: 10px;
+    color: white;
+}
+  .carrusel-item p {
+    color: white;
+}
+  /* Ocultar el contenido por defecto */
+  .carrusel-item {
+    display: none;
+}
+  /* Mostrar el contenido cuando el radio button está seleccionado */
+  input#item1:checked ~ .carrusel-inner .item1,
+  input#item2:checked ~ .carrusel-inner .item2,
+  input#item3:checked ~ .carrusel-inner .item3 {
+    display: block;
+}
+  /* Estilo de los botones de radio */
+  input[type="radio"] {
+    display: none;
+}
+  /* Estilos para los indicadores */
+  .indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+  .indicadores label {
+    width: 30px;
+    height: 10px;
+    background-color: white;
+    border-radius: 45px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+label:hover{
+    background-color: #ed8a36;
+}
+  /* Indicadores activos */
+  input#item1:checked ~ .indicadores label:nth-child(1),
+  input#item2:checked ~ .indicadores label:nth-child(2),
+  input#item3:checked ~ .indicadores label:nth-child(3) {
+    background-color: #ed8a36;
+}
+/*---AQUI FINALIZA EL CARRUSEL DE GPT---*/
+/*---------------AQUI INICIA EL EDITOR DE LA SECTION LATEST PROJECT---------------*/
+.latestproject{
     background-color: aquamarine;
+    height: 40vh;
+    text-decoration: none;
+    justify-items: center;    
 }
-.carousel-inner{
-    width: 50%;
+.projectimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.carousel-inner img{
-    object-fit: cover;
+.projectimg img{
+    height: 400PX;
+    width: 350PX;
 }
+/*******CONTINUAR EDITANDO LAS IMAGENES********/
