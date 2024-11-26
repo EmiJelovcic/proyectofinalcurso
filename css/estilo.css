@@ -25,24 +25,23 @@ body{
     align-items: center;
 }
 
-a{
+.menu a{
     text-decoration: none;
-    color: white;
     text-transform: uppercase;
+    color: white;
     cursor: pointer;
+    font-weight: bold;
+    display: flex;
 }
 /*AQUI FINALIZA EL EDITOR DEL HEADER*/
 
 /* ------------------------ AQUI INICIA EL EDITOR DEL HERO ------------------------ */
 .hero{
-    /*Insertar el tamaño al hero con el atributo "height: 80vh"*/
-    height: vh;
+    height: 80vh;
     background-color: #3f3b3c;
     display: flex;
     justify-content: space-evenly;
-    /*este justify modifica horizontalmente*/
     align-items: center;
-    /*este justify modifica verticalmente*/
 }
 p{
     color: #e3e3e3;
@@ -93,9 +92,6 @@ p{
 .altura h6{
     color: white;
 }
-.sectioncinco{
-    background-color: rgba(172, 255, 47, 0.938);
-}
 .sectionseis{
     background-color: rgba(0, 110, 255, 0.616);
 }
@@ -112,9 +108,6 @@ footer{
     flex-direction: column;
     background-color: #42434c;
     color: #e3e3e3;
-}
-.sectionuno h2{
-    padding: 20px 0px 20px 0px;
 }
 .tarjetasectionuno{
     /*background-color: green;*/
@@ -163,9 +156,6 @@ footer{
     justify-content: center;
     height: 60vh;
 }
-.sectiondos h2{
-    padding: 20px 0px 20px 0px;
-}
 .sectiondos svg{
     width: 60px;
     height: 70px;
@@ -212,9 +202,6 @@ footer{
 .sectiontres{
     background-color: #3f3b3c;
     height: 50vh;
-}
-.sectiontres h2{
-    padding: 20px 0px 20px 0px;
 }
 .divskills{
     display: flex;
@@ -387,21 +374,38 @@ label:hover{
 /*---AQUI FINALIZA EL CARRUSEL DE GPT---*/
 /*---------------AQUI INICIA EL EDITOR DE LA SECTION LATEST PROJECT---------------*/
 .latestproject{
-    background-color: aquamarine;
-    height: 40vh;
+    background-color:  #3f3b3c;
+    height: 65vh;
+    justify-items: center;
+    color: white;
+}
+.menu-dos a{
     text-decoration: none;
-    justify-items: center;    
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    
 }
-.projectimg{
+.collage{
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
-.projectimg img{
-    height: 400PX;
-    width: 350PX;
+.contenedor img{
+    object-fit: cover; /* Esto hace que la imagen ocupe todo el div sin distorsionarse */
+    /*background-color: #3f3b3c;
+    border: solid #3f3b3c;*/
 }
-/*******CONTINUAR EDITANDO LAS IMAGENES********/
+.contenedorimggrande{
+    /*background-color: white;
+    border: solid white;*/
+}
+.contenedorcolumn{
+    display: flex;
+    flex-direction: column;
+    /*background-color: #3f3b3c;
+    border: solid #3f3b3c;*/
+}
+/*---AQUI FINALIZA LA SECTION LATEST PROJECT---*/
